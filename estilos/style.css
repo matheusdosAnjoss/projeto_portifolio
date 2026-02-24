@@ -27,6 +27,19 @@ body {
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.escuro {
+  --fundo-principal: #141414;
+  --texto: #e5e5e5;
+  --texto-inverso: #141414;
+
+  --destaque: #e50914;         /* vermelho Netflix real */
+  --destaque-inverso: #b20710; /* vermelho mais escuro */
+
+  --fundo-card: #181818;
+
 }
 
 header {
@@ -231,6 +244,10 @@ article h2 {
   transition: border-width 0.5s,  border-color 0.5s;
 }
 
+.titulo {
+  color: var(--texto);
+}
+
 .projeto:hover {
   border-left-width: 15px;
   cursor: pointer;
@@ -256,6 +273,22 @@ footer {
 
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  #ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  #detalhes {
+    grid-column: 3 / 4;
+  }
+
+
   #skill-container {
     grid-template-columns: auto auto;
   }
@@ -270,8 +303,8 @@ footer {
   }
 
   .foto-projeto {
-    aspect-ratio: 1/1;
-    max-width: 20%;
-    max-height: 200px;
+    aspect-ratio: 1/0;
+    max-width: 90%;
+    max-height: 300px;
   }
 }
