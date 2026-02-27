@@ -265,7 +265,7 @@ article h2 {
 
 footer {
   background-color: var(--destaque);
-  color: var(--texto-inverso);
+  color: var(--texto);
   text-align: center;
   padding: 15px;
   font-size: 1em;
@@ -304,7 +304,7 @@ footer {
 
   .foto-projeto {
     aspect-ratio: 1/0;
-    max-width: 90%;
+    max-width: 97%;
     max-height: 300px;
   }
 }
