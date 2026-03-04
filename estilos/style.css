@@ -265,7 +265,7 @@ article h2 {
 
 footer {
   background-color: var(--destaque);
-  color: var(--texto);
+  color: var(--texto-inverso);
   text-align: center;
   padding: 15px;
   font-size: 1em;
